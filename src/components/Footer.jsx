@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <motion.footer
     initial={{y:200}}
-    // onViewportEnter={}
     animate={{y:0}}
     transition={{ease: "easeIn", duration: .5}} 
     className="bg-darkBlue text-white py-8 px-4 md:px-0"
@@ -26,7 +24,6 @@ const Footer = () => {
                     <li className="cursor-pointer hover:text-limeGreen transition-all">About Us</li>
                     <li className="cursor-pointer hover:text-limeGreen transition-all">Contact</li>
                     <li className="cursor-pointer hover:text-limeGreen transition-all">Blog</li>
-                    <Link to="/test">Test</Link>
                 </ul>
                 <ul className="flex flex-col gap-3">
                     <li className="cursor-pointer hover:text-limeGreen transition-all">Careers</li>
